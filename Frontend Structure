@@ -1,0 +1,14 @@
+frontend/
+ ├── src/
+ │   ├── pages/
+ │   │   ├── AssignmentList.jsx
+ │   │   └── AssignmentAttempt.jsx
+ │   ├── components/
+ │   │   ├── SqlEditor.jsx
+ │   │   ├── ResultTable.jsx
+ │   │   └── SampleData.jsx
+ │   ├── styles/
+ │   │   ├── _variables.scss
+ │   │   ├── _mixins.scss
+ │   │   └── main.scss
+ │   └── App.jsx
