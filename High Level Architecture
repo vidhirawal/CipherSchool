@@ -1,0 +1,8 @@
+React Frontend
+   ↓ API calls
+Node.js + Express Backend
+   ↓
+PostgreSQL (SQL execution sandbox)
+MongoDB Atlas (Assignments & progress)
+   ↓
+LLM API (Hints only)
