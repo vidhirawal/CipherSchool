@@ -1,0 +1,15 @@
+User clicks Execute Query
+↓
+Frontend POST /execute
+↓
+Backend validates query
+↓
+SET search_path
+↓
+PostgreSQL executes query
+↓
+Result returned
+↓
+Frontend state updated
+↓
+Table rendered
