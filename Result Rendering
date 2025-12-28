@@ -1,0 +1,16 @@
+{results.length > 0 && (
+  <table>
+    <thead>
+      <tr>
+        {Object.keys(results[0]).map(col => <th>{col}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {results.map(row => (
+        <tr>
+          {Object.values(row).map(val => <td>{val}</td>)}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+)}
