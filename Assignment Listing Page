@@ -1,0 +1,6 @@
+// AssignmentList.jsx
+useEffect(() => {
+  fetch("/api/assignments")
+    .then(res => res.json())
+    .then(setAssignments);
+}, []);
