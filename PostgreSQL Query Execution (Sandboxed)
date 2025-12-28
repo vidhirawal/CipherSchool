@@ -1,0 +1,16 @@
+// services/postgres.service.js
+import pkg from "pg";
+const { Pool } = pkg;
+
+const pool = new Pool({ connectionString: process.env.PG_URL });
+
+export async function runUserQuery(schema, query) {
+  const client = await pool.connect();
+  try {
+    await client.query(`SET search_path TO ${schema}`);
+    const result = await client.query(query);
+    return result.rows;
+  } finally {
+    client.release();
+  }
+}
