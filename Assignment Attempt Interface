@@ -1,0 +1,5 @@
+<MonacoEditor
+  language="sql"
+  value={query}
+  onChange={setQuery}
+/>
