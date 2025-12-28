@@ -1,0 +1,19 @@
+// _variables.scss
+$primary: #4f46e5;
+
+// _mixins.scss
+@mixin respond($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// main.scss
+.assignment {
+  padding: 1rem;
+
+  @include respond(768px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
