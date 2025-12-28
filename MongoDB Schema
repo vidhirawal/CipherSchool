@@ -1,0 +1,8 @@
+// models/Assignment.js
+const AssignmentSchema = new mongoose.Schema({
+  title: String,
+  description: String, // Easy / Medium / Hard
+  question: String,
+  sampleTables: Array,
+  expectedOutput: mongoose.Schema.Types.Mixed
+}, { timestamps: true });
