@@ -1,0 +1,9 @@
+// controllers/query.controller.js
+export const executeQuery = async (req, res) => {
+  const { sql, assignmentId } = req.body;
+  if (!sql.toLowerCase().startsWith("select")) {
+    return res.status(400).json({ error: "Only SELECT allowed" });
+  }
+  const result = await runUserQuery(`workspace_${assignmentId}`, sql);
+  res.json({ data: result });
+};
