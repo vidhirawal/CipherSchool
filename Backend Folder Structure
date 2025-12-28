@@ -1,0 +1,20 @@
+backend/
+ ├── src/
+ │   ├── controllers/
+ │   │   ├── assignment.controller.js
+ │   │   ├── query.controller.js
+ │   │   └── hint.controller.js
+ │   ├── routes/
+ │   │   ├── assignment.routes.js
+ │   │   ├── query.routes.js
+ │   │   └── hint.routes.js
+ │   ├── models/
+ │   │   ├── Assignment.js
+ │   │   └── UserProgress.js
+ │   ├── services/
+ │   │   ├── postgres.service.js
+ │   │   └── llm.service.js
+ │   ├── app.js
+ │   └── server.js
+ ├── .env.example
+ └── package.json
